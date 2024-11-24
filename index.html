@@ -6,6 +6,7 @@
     <title> Contact Us </title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
+      
         body {
             font-family: 'Playfair Display', serif;
             margin: 0;
@@ -67,8 +68,7 @@
         .info-section {
             text-align: center;
             padding: 50px 20px;
-          
-          background-image: url('background_2.jpeg');
+            background-image: url('background_2.jpeg');
             background-position: center;
         }
       
@@ -112,10 +112,6 @@
             border-radius: 10px;
         }
       
-      
-      
-      
-      
          .external-link {
             font-size: 16px;
             margin-top: 20px;
@@ -130,91 +126,84 @@
             color: #8F9779;
             text-decoration: underline; 
         }
+
+/* 
+Code copied from: [https://www.w3schools.com/css/css_form.asp]
+Author: [W3 Schools]
+Name: ["CSS Forms"]
+Description: [Taught me how to create forms]
+Date retrieved: [20 Nov, 2024]
+*/
+      
+        form {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #617C58;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          font-family: 'Playfair Display', serif;
+        }
+
+        label {
+          margin-bottom: 8px;
+          font-weight: bold;
+          color: white;
+        }
       
       
-      
-      
-      
-      
-  
-      /* General form styling */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #617C58;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'Playfair Display', serif;
-      background-image: url('green_background.jpeg');
+/* 
+Code copied from: [https://www.w3schools.com/css/tryit.asp?filename=trycss_forms]
+Author: [W3 Schools]
+Name: ["Using CSS to style an HTML Form"]
+Description: [Taught me how to style forms using CSS]
+Date retrieved: [20 Nov, 2024]
+*/
 
-}
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        textarea,
+        select {
+          width: 100%;
+          padding: 10px;
+          font-size: 17px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
 
-/* Label styling */
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: white;
-}
+        input[type="submit"],
+        input[type="reset"] {
+          padding: 10px 20px;
+          margin-right: 10px;
+          border: none;
+          border-radius: 5px;
+          font-size: 14px;
+          background-color: #3A4528;
+          color: #fff;
+        }
 
-/* Input fields */
-input[type="email"],
-input[type="date"],
-input[type="number"],
-textarea,
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  box-sizing: border-box;
-}
+        input[type="reset"] {
+          background-color: #B5B5B5;
+        }
 
-/* Button styling */
-input[type="submit"],
-input[type="reset"] {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  background-color: #3A4528;
-  color: #fff;
-}
+        input[type="submit"]:hover {
+          background-color: #8F9779;
+        }
 
-input[type="reset"] {
-  background-color: #B5B5B5;
-}
-
-input[type="submit"]:hover {
-  background-color: #8F9779;
-}
-
-input[type="reset"]:hover {
-  background-color: #C9C9C9;
-}
+        input[type="reset"]:hover {
+          background-color: #C9C9C9;
+        }
 
 
-@media (max-width: 500px) {
-  form {
-    padding: 15px;
-  }
-
-  input[type="submit"],
-  input[type="reset"] {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-      
-      
-  
-      
+        @media (max-width: 500px) {
+          form {
+            padding: 15px;
+          }
+        }     
     </style>
   
   <style>
@@ -230,10 +219,6 @@ input[type="reset"]:hover {
     }
 </style>
 
-  
-  
-
-  
 </head>
 <body>
     <nav class="navbar">
@@ -251,16 +236,13 @@ input[type="reset"]:hover {
         <p> We’d love to hear from you! Whether you have questions, feedback, or need support, feel free to get in touch. We also do custom orders! Feel free to fill out the form below if you're interested. </p>
     </div>
   
-  
-
     <div class="info-section">
         <div class="info">
             <div class="info-box">
                 <img src="house.jpeg" alt="Visit Us Image" class="section-image">
                 <h3> Visit Us </h3>
                 <p> Stop by our garden to explore our floral selection in person. We’d love to see you. </p>
-                <p> 123 Bloom Street, Floraltown, ON </p>
-              
+                <p> 123 Bloom Street, Floraltown, ON </p> 
             </div>
 
             <div class="info-box">
@@ -278,20 +260,18 @@ input[type="reset"]:hover {
 </div>
           
               <div>
-                <a href="https://bouqs.com/blog/types-of-flowers-annual-perennial-biennial/?srsltid=AfmBOoosKHYrNjxzLC1P0gjbscba5kWxc8uNAt1Gb-OFjADqG-iD6GY3"
-               class="external-link"
-               target="_blank" style="font-size:25px">
-               Want to make a custom arrangement but don't know much about flowers? Check out this awesome website!
-            </a>
-        </div>
-          
+        <a href="https://www.countryliving.com/gardening/g3280/flower-pictures/" class="external-link" target="_blank" style="font-size:25px"> Want to make a custom arrangement but don't know much about flowers? Check out this awesome website? </a>
+           
           <h3> After you have looked at the website, select the flowers you would like in your next bouquet and fill out the form below!</h3>
-
-
         </div>
-      
-      
-      
+             
+    <!--
+Code copied from: [https://www.youtube.com/watch?v=zIN54lhJtQU]
+Author: [BroCode]
+Name: ["Learn HTML forms in 10+ minutes!"]
+Description: [HTML forms tutorial example explained]
+Date retrieved: [22 Nov, 2024]
+-->       
       <form action="index.php" method="POST">
       
       <label for="email">Email:</label>
@@ -308,14 +288,14 @@ input[type="reset"]:hover {
           
         <option value="visa">Visa</option>
           
-                <option value="Mastercard">Mastercard </option>
+        <option value="Mastercard">Mastercard </option>
           
         <option value="giftcard">Giftcard</option>
 
         </select><br>
         
-        
          <label for="comment">Flowers Selected for Arrangement:</label>
+        
         <textarea id="comment" rows="3" cols="25"></textarea>
         
         <input type="reset">
@@ -323,6 +303,7 @@ input[type="reset"]:hover {
          <input type="submit">
         
       </form>
+    </div>
     </div>
 </body>
 </html>
