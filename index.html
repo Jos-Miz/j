@@ -112,6 +112,107 @@
             border-radius: 10px;
         }
       
+      
+      
+      
+      
+         .external-link {
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+            color: #3A4528;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            color: #8F9779;
+            text-decoration: underline; 
+        }
+      
+      
+      
+      
+      
+      
+  
+      /* General form styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #617C58;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Playfair Display', serif;
+      background-image: url('green_background.jpeg');
+
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #3A4528;
+  color: #fff;
+}
+
+input[type="reset"] {
+  background-color: #B5B5B5;
+}
+
+input[type="submit"]:hover {
+  background-color: #8F9779;
+}
+
+input[type="reset"]:hover {
+  background-color: #C9C9C9;
+}
+
+
+@media (max-width: 500px) {
+  form {
+    padding: 15px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+      
+      
   
       
     </style>
@@ -175,8 +276,53 @@
     <p>We would be happy to hear from you! Please contact us through our email.</p>
 <p><a href="mailto:jdmisner@iwaterloo.ca" class="email-link">jdmisner@iwaterloo.ca</a></p>
 </div>
+          
+              <div>
+                <a href="https://bouqs.com/blog/types-of-flowers-annual-perennial-biennial/?srsltid=AfmBOoosKHYrNjxzLC1P0gjbscba5kWxc8uNAt1Gb-OFjADqG-iD6GY3"
+               class="external-link"
+               target="_blank" style="font-size:25px">
+               Want to make a custom arrangement but don't know much about flowers? Check out this awesome website!
+            </a>
+        </div>
+          
+          <h3> After you have looked at the website, select the flowers you would like in your next bouquet and fill out the form below!</h3>
+
 
         </div>
+      
+      
+      
+      <form action="index.php" method="POST">
+      
+      <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="jdmisner@uwaterloo.ca"><br>
+        
+         <label for="bday">Date Needed by:</label>
+         <input type="date" id="bday"><br>
+      
+       <label for="quantity">How many flowers are going in the arrangement?</label>
+         <input type="number" id="quantity" min="0" max="99"><br>
+        
+         <label for="payment">Payment Methods:</label>
+        <select id="payment">
+          
+        <option value="visa">Visa</option>
+          
+                <option value="Mastercard">Mastercard </option>
+          
+        <option value="giftcard">Giftcard</option>
+
+        </select><br>
+        
+        
+         <label for="comment">Flowers Selected for Arrangement:</label>
+        <textarea id="comment" rows="3" cols="25"></textarea>
+        
+        <input type="reset">
+        
+         <input type="submit">
+        
+      </form>
     </div>
 </body>
 </html>
