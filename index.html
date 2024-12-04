@@ -47,7 +47,7 @@
 
         .contact-section {
             background-image: url('bg_1.jpeg');
-            background-position: center;
+            background-position: center -200px;
             color: black;
             text-align: center;
             padding: 80px 20px;
@@ -59,7 +59,7 @@
         }
       
         .contact-section p {
-            font-size: 20px;
+            font-size: 25px;
             max-width: 800px;
             margin: 0 auto;
         }
@@ -95,13 +95,13 @@
         }
 
         .info-box h3 {
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 10px;
             color: #3A4528; 
         }
 
         .info-box p {
-            font-size: 16px;
+            font-size: 20px;
             margin-bottom: 10px;
         }
 
@@ -111,97 +111,8 @@
             margin-bottom: 15px;
             border-radius: 10px;
         }
+
       
-         .external-link {
-            font-size: 16px;
-            margin-top: 20px;
-            text-align: center;
-            display: block;
-            color: #3A4528;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .external-link:hover {
-            color: #8F9779;
-            text-decoration: underline; 
-        }
-
-/* 
-Code copied from: [https://www.w3schools.com/css/css_form.asp]
-Author: [W3 Schools]
-Name: ["CSS Forms"]
-Description: [Taught me how to create forms]
-Date retrieved: [20 Nov, 2024]
-*/
-      
-        form {
-          max-width: 600px;
-          margin: 0 auto;
-          padding: 20px;
-          background-color: #617C58;
-          border: 1px solid #ddd;
-          border-radius: 8px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          font-family: 'Playfair Display', serif;
-        }
-
-        label {
-          margin-bottom: 8px;
-          font-weight: bold;
-          color: white;
-        }
-      
-      
-/* 
-Code copied from: [https://www.w3schools.com/css/tryit.asp?filename=trycss_forms]
-Author: [W3 Schools]
-Name: ["Using CSS to style an HTML Form"]
-Description: [Taught me how to style forms using CSS]
-Date retrieved: [20 Nov, 2024]
-*/
-
-        input[type="email"],
-        input[type="date"],
-        input[type="number"],
-        textarea,
-        select {
-          width: 100%;
-          padding: 10px;
-          font-size: 17px;
-          margin-top: 5px;
-          margin-bottom: 15px;
-          box-sizing: border-box;
-        }
-
-        input[type="submit"],
-        input[type="reset"] {
-          padding: 10px 20px;
-          margin-right: 10px;
-          border: none;
-          font-size: 14px;
-          background-color: #3A4528;
-          color: #fff;
-        }
-
-        input[type="reset"] {
-          background-color: #B5B5B5;
-        }
-
-        input[type="submit"]:hover {
-          background-color: #8F9779;
-        }
-
-        input[type="reset"]:hover {
-          background-color: #C9C9C9;
-        }
-
-
-        @media (max-width: 500px) {
-          form {
-            padding: 15px;
-          }
-        }     
     </style>
   
   <style>
@@ -254,54 +165,9 @@ Date retrieved: [20 Nov, 2024]
     <img src="email.jpeg" alt="Email Us Image" class="section-image">
     <h3>Email Us</h3>
     <p>We would be happy to hear from you! Please contact us through our email.</p>
-<p><a href="mailto:jdmisner@iwaterloo.ca" class="email-link">jdmisner@iwaterloo.ca</a></p>
+<p><a href="mailto:jdmisner@uwaterloo.ca" class="email-link">jdmisner@uwaterloo.ca</a></p>
 </div>
-          
-              <div>
-        <a href="https://www.countryliving.com/gardening/g3280/flower-pictures/" class="external-link" target="_blank" style="font-size:25px"> Want to make a custom arrangement but don't know much about flowers? Check out this awesome website? </a>
-           
-          <h3> After you have looked at the website, select the flowers you would like in your next bouquet and fill out the form below!</h3>
-        </div>
              
-    <!--
-Code copied from: [https://www.youtube.com/watch?v=zIN54lhJtQU]
-Author: [BroCode]
-Name: ["Learn HTML forms in 10+ minutes!"]
-Description: [HTML forms tutorial example explained]
-Date retrieved: [22 Nov, 2024]
--->       
-      <form action="index.php" method="POST">
-      
-      <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="jdmisner@uwaterloo.ca"><br>
-        
-         <label for="bday">Date Needed by:</label>
-         <input type="date" id="bday"><br>
-      
-       <label for="quantity">How many flowers are going in the arrangement?</label>
-         <input type="number" id="quantity" min="0" max="99"><br>
-        
-         <label for="payment">Payment Methods:</label>
-        <select id="payment">
-          
-        <option value="visa">Visa</option>
-          
-        <option value="Mastercard">Mastercard </option>
-          
-        <option value="giftcard">Giftcard</option>
 
-        </select><br>
-        
-         <label for="comment">Flowers Selected for Arrangement:</label>
-        
-        <textarea id="comment" rows="3" cols="25"></textarea>
-        
-        <input type="reset">
-        
-         <input type="submit">
-        
-      </form>
-    </div>
-    </div>
 </body>
 </html>
